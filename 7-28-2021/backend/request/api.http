@@ -1,0 +1,16 @@
+## submit question
+
+POST http://127.0.0.1:5000/api/questions
+Content-Type: application/json
+
+{
+  "name": "Mark",
+  "content": "this is a question yaya('w')"
+}
+
+
+
+## get
+
+GET  http://127.0.0.1:5000/api/questions
+Content-Type: application/json
