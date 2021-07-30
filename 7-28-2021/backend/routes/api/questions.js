@@ -7,8 +7,8 @@ const Question = require('../../models/question')
 router.get('/', (req, res) => {
   // Question.find() will give us all the questions, bring it back to server
   Question.find()
-  .then(questions => res.json(questions)) // send it to frontend
-  .catch(err => res.status(404).json(err))
+    .then(questions => res.json(questions)) // send it to frontend
+    .catch(err => res.status(404).json(err))
 
 
 })
