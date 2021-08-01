@@ -10,7 +10,6 @@ router.get('/', (req, res) => {
     .then(questions => res.json(questions)) // send it to frontend
     .catch(err => res.status(404).json(err))
 
-
 })
 
 router.post('/', (req, res) => {
