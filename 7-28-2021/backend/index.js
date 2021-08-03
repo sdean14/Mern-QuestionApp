@@ -16,9 +16,9 @@ const mongoose = require('mongoose');
 const db = require('./config/keys').mongoURI
 
 mongoose
-  .connect(db, { useNewUrlParser: true, useUnifiedTopology})
+  .connect(db, { useNewUrlParser: true, useUnifiedTopology })
   .then(() => console.log('mongo! go!'))
-  .catch(err => console.log('oh erro'))
+  .catch(err => console.log(err, 'oh erro'))
 
 
 app.use('/api/questions', questions);
