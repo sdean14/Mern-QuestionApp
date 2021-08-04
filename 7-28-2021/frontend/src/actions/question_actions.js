@@ -10,8 +10,7 @@ export const receiveQuestion = createAction('RECEIVE_QUESTION')
 
 export const fetchQuestions = () => async dispatch => {
   try {
-    const res = await axios.get(`http://localhost:5000/api/questions
-    `) //connecting back and front
+    const res = await axios.get(`http://localhost:5000/api/questions`) //connecting back and front
     dispatch(receiveQuestions(res.data))
 
   } catch (err) {
