@@ -4,7 +4,7 @@ import { fetchQuestions } from '../actions/question_actions'
 import { connect } from 'react-redux'
 
 
-const questions = [{q: 'www'}, {q:'eeee'}];
+const questions = [{ q: 'www' }, { q: 'eeee' }];
 class Questions extends React.Component {
 
   componentDidMount() {
