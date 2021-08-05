@@ -38,4 +38,5 @@ const QuestionForm = ({ submit }) => {
 const mdp = dispatch => ({
   submit: question => dispatch(submitQuestion(question))
 })
+
 export default connect(null, mdp)(QuestionForm);
